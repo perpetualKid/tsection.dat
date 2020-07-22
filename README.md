@@ -33,7 +33,7 @@ Facing a Tower of Babel situation where every route that used extended track sec
 
 ### WARNING:
 
-If you have any \global\tsection.dat file installed other than the MS/KUJU default \global\tsection.dat file or an earlier build of this standardized \global\tsection.dat file, use of this file may initially cause MSTS to crash. See item 4.c. below for how to resolve this.
+If you have any \global\tsection.dat file installed other than the MS/KUJU default \global\tsection.dat file or an earlier build of this standardized \global\tsection.dat file, use of this file may initially cause MSTS to crash. See item 4 below for how to resolve this.
 
 ## How to use:
 
@@ -45,11 +45,11 @@ If you have any \global\tsection.dat file installed other than the MS/KUJU defau
 
 4. First use of the standardized \global\tsection.dat file will impact existing routes in one of three ways (Updating a previously installed standardized \global\tsection.dat file as no additional impact):
 
-        a. Routes which do not use any extended track sections are not impacted so long as they remain as they are. This includes all six of the default routes included in the original program and many other routes. Editing these routes may require that track section id number be updated prior to editing, see below for id updating. Any edit of a section of dynamic track, unless the route has been updated, will corrupt all other sections of dynamic track. DO NOT EDIT ANY DYNAMIC TRACK without updating the route. It is possible to edit dynamic track without realizing that the track is being edited.
+    - Routes which do not use any extended track sections are not impacted so long as they remain as they are. This includes all six of the default routes included in the original program and many other routes. Editing these routes may require that track section id number be updated prior to editing, see below for id updating. Any edit of a section of dynamic track, unless the route has been updated, will corrupt all other sections of dynamic track. DO NOT EDIT ANY DYNAMIC TRACK without updating the route. It is possible to edit dynamic track without realizing that the track is being edited.
 
-        b. Routes which use extended track sections that are included in this file will require one id number updating. One means of updating id numbers is to use Okrasa Ghia's program "Horace" which is available for download in the files library at train-sim.com, search for the word Horace in the file descriptions to get the latest version. Horace is also included in the Xtracks collection.
+    -  Routes which use extended track sections that are included in this file will require one id number updating. One means of updating id numbers is to use Okrasa Ghia's program "Horace" which is available for download in the files library at train-sim.com, search for the word Horace in the file descriptions to get the latest version. Horace is also included in the Xtracks collection.
 
-        c. Routes which use extend track sections that are not included in this file are not compatible and will likely cause program errors (known as crashes). There is a relatively easy, though possibly time consuming solution, have those sections included in the file. See below for further detail on having sections included in the file. Until the sections are added to this file, it will be necessary to move all routes using those sections out of the routes folder while using this \global\tsection.dat file.
+    - Routes which use extend track sections that are not included in this file are not compatible and will likely cause program errors (known as crashes). There is a relatively easy, though possibly time consuming solution, have those sections included in the file. See below for further detail on having sections included in the file. Until the sections are added to this file, it will be necessary to move all routes using those sections out of the routes folder while using this \global\tsection.dat file.
 
 5. If you use Horace to update the id numbers, be sure to follow all of the instructions included with the program, particularly in regards to uncompressed world files, the need to delete the .RDB, .RIT, .TDB, and .TIT files, any .BK versions thereof, and do a track data base rebuild.
 
@@ -73,12 +73,14 @@ If you have any \global\tsection.dat file installed other than the MS/KUJU defau
 
 2. If you are distributing a route that relies on the standardized \global\tsection.dat file, please add the following to your distribution and install package:
 
-        a. Include notification in the readme file of your route that you are using the standardized \global\tsection.dat file and that it may introduce incompatibilities with routes that use extended track sections that are not included in the file.
+    - Include notification in the readme file of your route that you are using the standardized \global\tsection.dat file and that it may introduce incompatibilities with routes that use extended track sections that are not included in the file.
 
-        b. Read the _INFO(Build nnnnn) line of the \global\tsection.dat file on the machine the route is being installed on (if present).
+    - Read the _INFO(Build nnnnn) line of the \global\tsection.dat file on the machine the route is being installed on (if present).
 
     - Do not install a lower build number over a higher build number.
+    
     - If the build number ends with an alpha character, stop and ask the user to continue or skip. A trailing alpha character indicates a development beta version of the file.
+    
     - If the build number is not present - if a _Skip line appears before the _INFO(Build ... line is found - warn the user and ask if they wish to continue.
 
 3. Questions about the file itself should be send to tsection@train-sim.com.
