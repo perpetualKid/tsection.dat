@@ -1,0 +1,4 @@
+# https://github.com/Danimoth/gitattributes
+# Auto detect text files and perform LF normalization
+* text=auto
+*.dat diff
