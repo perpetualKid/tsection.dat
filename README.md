@@ -1,35 +1,12 @@
+# Preface
+
+>**If you came here in search of tsection.dat downloads, please have a look in the [Releases](https://github.com/perpetualKid/tsection.dat/releases) section**
+
 # Train Simulator global track section database tsection.dat
 
 The purpose of this project is to provide a standardized \global\tsection.dat file that can be shared by all track section developers. 
 
 Facing a Tower of Babel situation where every route that used extended track sections needed its own unique \global\tsection.dat file, this project includes extended sections and is compatible with the default routes. This \global\tsection.dat file includes many extended shapes from several different developers, and is completely compatible with the default routes as issued by MS/KUJU.
-
-## Add-On Packages Covered:
-|Add-On|Included In|Download at|
-|-------------|------------|------------|
-|Autobahn Roads|Newroads|www.train-sim.com|
-|Conrail Indy Custom Roads|Newroads|www.train-sim.com|
-|CykWorks Pack 1|XTracks||
-|Dirt Roads|Newroads||
-|DualTracks V1.1|XTracks|www.train-sim.com|
-|Europeanbahn (Commercial Add-Ons)||http://www.europeanbahn.co.uk/|
-|Gravel Roads v1.0|Newroads|www.train-sim.com|
-|"Magnetic" Platforms (Ashphalt, Brick, Marble, White Stone)||www.uktrainsim.com|
-|MTracks V1.9||http://home.comcast.net/~markhyams/mtracks|
-|Newroads V4.01||www.train-sim.com, www.uktrainsim.com|
-|Residential City Roads V1.0|Newroads|www.train-sim.com|
-|RET Metro (Commercial Add-Ons)||www.retmetro.netmenu.nl|
-|ScaleRail Beta||www.3dtrains.com|
-|ScaleRoad Beta||www.3dtrains.com|
-|STracks V1.0|| ?|
-|UK FineScale V3.1.6||ukfs.trainsimfiles.com|
-|XTracks V3.18||www.train-sim.com, www.uktrainsim.com|
-|YTracks V1||www.train-sim.com|
-
-### Other Download Sites
-- Australia Steam4Me: http://www.railpage.org.au/steam4me/index.htm
-- Denmark Team Routebuilders: http://team.routebuilders.dk/Engelsk/Engelsk.htm
-- Germany Train DE: http://www.the-train.de
 
 ### WARNING:
 
@@ -47,7 +24,7 @@ If you have any \global\tsection.dat file installed other than the MS/KUJU defau
 
     - Routes which do not use any extended track sections are not impacted so long as they remain as they are. This includes all six of the default routes included in the original program and many other routes. Editing these routes may require that track section id number be updated prior to editing, see below for id updating. Any edit of a section of dynamic track, unless the route has been updated, will corrupt all other sections of dynamic track. DO NOT EDIT ANY DYNAMIC TRACK without updating the route. It is possible to edit dynamic track without realizing that the track is being edited.
 
-    -  Routes which use extended track sections that are included in this file will require one id number updating. One means of updating id numbers is to use Okrasa Ghia's program "Horace" which is available for download in the files library at train-sim.com, search for the word Horace in the file descriptions to get the latest version. Horace is also included in the Xtracks collection.
+    -  Routes which use extended track sections that are included in this file will require one id number updating. One means of updating id numbers is to use Okrasa Ghia's program "Horace" which is available for download in the files library at trainsim.com, search for the word Horace in the file descriptions to get the latest version. Horace is also included in the Xtracks collection.
 
     - Routes which use extend track sections that are not included in this file are not compatible and will likely cause program errors (known as crashes). There is a relatively easy, though possibly time consuming solution, have those sections included in the file. See below for further detail on having sections included in the file. Until the sections are added to this file, it will be necessary to move all routes using those sections out of the routes folder while using this \global\tsection.dat file.
 
@@ -57,13 +34,13 @@ If you have any \global\tsection.dat file installed other than the MS/KUJU defau
 
 ## How to get shapes/sections included:
 
-1. If you have shapes/sections you wish to have included, email the .S, .SD files and the relevant tsection.dat entries to tsection@train-sim.com. New versions will be released as warranted.
+1. If you have shapes/sections you wish to have included, email the .S, .SD files and the relevant tsection.dat entries to tsection@trainsim.com. New versions will be released as warranted.
 
-2. If you are developing shapes/sections and wish to have a block of id numbers allocated, please send an email to tsection@train-sim.com with a request for the number of id numbers desired.
+2. If you are developing shapes/sections and wish to have a block of id numbers allocated, please send an email to tsection@trainsim.com with a request for the number of id numbers desired.
 
-3. My intent is to maintain reasonable compatibility with the naming convention that MS/KUJU mostly used for their shapes. So I may request that you rename files to maintain the naming convention. If you wish, you may email your proposed .S file names with a brief description of the object to me at tsection@train-sim.com and I will let you know if the names seem appropriate.
+3. My intent is to maintain reasonable compatibility with the naming convention that MS/KUJU mostly used for their shapes. So I may request that you rename files to maintain the naming convention. If you wish, you may email your proposed .S file names with a brief description of the object to me at tsection@trainsim.com and I will let you know if the names seem appropriate.
 
-4. All files sent will be kept in strict confidence and will not be available from me. The only file I will release is a version of the \global\tsection.dat file that includes reference to the sections and shapes. This file will only be released through train-sim.com.
+4. All files sent will be kept in strict confidence and will not be available from me. The only file I will release is a version of the \global\tsection.dat file that includes reference to the sections and shapes. This file will only be released through trainsim.com.
 
 5. When developing shapes, try to use existing sections. For example if your shape is for a 10 meter long track with a 1.5 meter gauge, use track section 0, rather than making a new SectionSize ( 1.5 10 ) entry.
 
@@ -83,8 +60,8 @@ If you have any \global\tsection.dat file installed other than the MS/KUJU defau
     
     - If the build number is not present - if a _Skip line appears before the _INFO(Build ... line is found - warn the user and ask if they wish to continue.
 
-3. Questions about the file itself should be send to tsection@train-sim.com.
+3. Questions about the file itself should be send to tsection@trainsim.com.
 
 4. Questions about any of the sections or shapes included should be directed to the developers. Each developer is listed, with contact information, and the file is sufficiently annotated to tell who the developed any section or shape.
 
-5. Questions of general interest should be directed to the route developers forum at train-sim.com.
+5. Questions of general interest should be directed to the route developers forum at trainsim.com.
